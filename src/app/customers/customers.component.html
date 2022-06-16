@@ -1,1 +1,38 @@
-<p>customers works!</p>
+<div class="container">
+  <div class="row">
+    <div class="col card" style="width: 18rem;">
+      <img class="card-img-top" src="/assets/img.png" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Customers</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a routerLink="/customers"  class="btn btn-primary">Explore Customers</a>
+      </div>
+    </div>
+    <div class="col card" style="width: 18rem;">
+<br>
+      <h4>List of Employees</h4>
+      <hr>
+      <table class="table table-striped">
+        <thead>
+        <tr>
+          <th>Customers Id</th>
+          <th>Customers Name</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let customer of customers">
+          <td>{{customer.id}}</td>
+          <td>{{customer.name}}</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
